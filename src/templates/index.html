@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Message Detector</title>
+</head>
+<body>
+    <h1>Spam Message Detector</h1>
+    <form action="/check" method="post">
+        <textarea name="message_text" rows="10" cols="50" placeholder="Enter the message here..."></textarea><br>
+        <input type="submit" value="Check">
+    </form>
+    {% if result %}
+    <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
