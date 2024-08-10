@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  
+      - main  # Change this to your default branch if different
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.9' 
+          python-version: '3.9'  # Specify the Python version
 
       - name: Install dependencies
         run: |
