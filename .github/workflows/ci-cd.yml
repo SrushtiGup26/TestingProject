@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Change this to your default branch if different
+      - main  # Change this if your default branch has a different name
 
 jobs:
   build-and-deploy:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          python -m unittest discover -s src/tests  # Adjust path if needed
 
       - name: Deploy to Heroku
         env:
