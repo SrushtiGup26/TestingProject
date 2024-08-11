@@ -1,5 +1,5 @@
 import unittest
-from src.model import detect_spam
+from Model import detect_spam
 
 class TestSpamDetection(unittest.TestCase):
 
